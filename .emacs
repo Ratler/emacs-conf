@@ -49,6 +49,12 @@
 ;; Javascript
 (require 'markdown-settings)
 
+;; C mode
+(require 'c-settings)
+
+;; Buffer settings
+(require 'buffer-settings)
+
 ;; custom stuff
 (load
  (setq custom-file (expand-file-name "conf/custom.el" user-emacs-directory))
