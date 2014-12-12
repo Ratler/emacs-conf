@@ -1,0 +1,17 @@
+PREFIX ?= ~
+
+.PHONY: all install byte-compile
+
+all: install byte-compile
+
+install:
+	install -dm755 $(PREFIX)/.emacs.d/conf/ && \
+	install -D .emacs.d/conf/*.el $(PREFIX)/.emacs.d/conf/ && \
+	install -m0644 .emacs $(PREFIX)/.emacs
+
+byte-compile:
+	@if test -d $(PREFIX)/.emacs.d/el-get ; then \
+		emacs -batch -l $(PREFIX)/.emacs -f batch-byte-compile $(PREFIX)/.emacs.d/conf/*.el ; \
+	fi
+
+.NOTPARALLEL:
