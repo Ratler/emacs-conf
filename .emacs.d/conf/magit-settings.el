@@ -1,0 +1,7 @@
+(include-plugin "magit")
+(include-plugin "s")
+(include-plugin "magit-gh-pulls")
+(require 'magit-gh-pulls)
+(add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls)
+(global-set-key (kbd "C-x g") 'magit-status)
+(provide 'magit-settings)

@@ -14,8 +14,7 @@
 (require 'el-get-settings)
 
 ;; GIT
-(include-plugin "magit")
-(require 'magit)
+(require 'magit-settings)
 
 ;; Popup
 (include-elget-plugin "popup")

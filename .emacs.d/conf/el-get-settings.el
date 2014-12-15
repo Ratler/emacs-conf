@@ -22,6 +22,7 @@
                     ruby-mode
                     jedi
                     direx
+                    s
                     magit
                     magit-gh-pulls
                     ein
