@@ -23,6 +23,7 @@
                     jedi
                     direx
                     magit
+                    magit-gh-pulls
                     ein
                     pydoc-info
                     nxhtml
