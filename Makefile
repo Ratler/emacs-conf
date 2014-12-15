@@ -6,7 +6,7 @@ all: install byte-compile
 
 install:
 	install -dm755 $(PREFIX)/.emacs.d/conf/ && \
-	install -D .emacs.d/conf/*.el $(PREFIX)/.emacs.d/conf/ && \
+	install .emacs.d/conf/*.el $(PREFIX)/.emacs.d/conf/ && \
 	install -m0644 .emacs $(PREFIX)/.emacs
 
 byte-compile:
