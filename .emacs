@@ -46,7 +46,7 @@
 (require 'markdown-settings)
 
 ;; Javascript
-(require 'markdown-settings)
+(require 'js-settings)
 
 ;; C mode
 (require 'c-settings)
