@@ -54,6 +54,9 @@
 ;; Buffer settings
 (require 'buffer-settings)
 
+;; Docker mode
+(require 'docker-settings)
+
 ;; custom stuff
 (load
  (setq custom-file (expand-file-name "conf/custom.el" user-emacs-directory))
