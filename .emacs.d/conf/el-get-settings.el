@@ -38,7 +38,8 @@
                     js2-mode
                     virtualenvwrapper
                     yasnippet
-                    dockerfile-mode))
+                    dockerfile-mode
+                    yaml-mode))
                     
 
 ;; first enable shallow clone, so we don't need to clone the entire

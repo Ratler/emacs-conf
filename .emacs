@@ -57,6 +57,9 @@
 ;; Docker mode
 (require 'docker-settings)
 
+;; YAML
+(require 'yaml-mode)
+
 ;; custom stuff
 (load
  (setq custom-file (expand-file-name "conf/custom.el" user-emacs-directory))
