@@ -10,9 +10,7 @@ install:
 	install -m0644 .emacs $(PREFIX)/.emacs
 
 byte-compile:
-	@if test -d $(PREFIX)/.emacs.d/el-get ; then \
-		rm -f $(PREFIX)/.emacs.d/conf/*.elc ; \
-		emacs -batch -l $(PREFIX)/.emacs -f batch-byte-compile $(PREFIX)/.emacs.d/conf/*.el ; \
-	fi
+	rm -f $(PREFIX)/.emacs.d/conf/*.elc
+	emacs -batch -l $(PREFIX)/.emacs -f batch-byte-compile $(PREFIX)/.emacs.d/conf/*.el
 
 .NOTPARALLEL:

@@ -36,6 +36,7 @@
 
 ; IPython notebook
 (include-plugin "emacs-ipython-notebook/lisp")
+(include-elget-plugin "ein")
 (require 'ein)
 
 ; shortcut function to load notebooklist

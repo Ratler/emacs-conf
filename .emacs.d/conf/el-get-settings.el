@@ -12,6 +12,11 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
+;; Override gh submodule that requires private access (only docs anyway)
+(setq el-get-sources
+      '((:name gh
+               :submodule nil)))
+
 (setq my-packages '(auto-complete
                     color-theme-zenburn
                     popup
@@ -40,7 +45,7 @@
 ;; history of every project
 (setq el-get-git-shallow-clone t)
 
-;; then intsall!
+;; then we install
 (el-get 'sync my-packages)
 
 (provide 'el-get-settings)

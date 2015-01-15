@@ -75,4 +75,9 @@
 (global-set-key [end] 'end-of-line)
 (global-set-key [f12] 'compile)
 
+;; Define image-types if running emacs-nox to make nxhtml happy
+(if (boundp 'image-types)
+    nil
+  (defvar image-types nil))
+
 (provide 'general-settings)
