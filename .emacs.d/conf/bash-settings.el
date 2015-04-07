@@ -7,7 +7,9 @@
         sh-indentation 2
         sh-indent-after-if '+
         sh-indent-after-do '+
-        sh-indent-for-then 0))
+        sh-indent-after-continuation 0
+        sh-indent-for-then 0)
+  (when (fboundp 'electric-indent-mode) (electric-indent-mode -1)))
 
 (add-hook 'sh-mode-hook 'my-sh-mode-settings)
 (add-hook 'sh-mode-book 'write-file-settings)
