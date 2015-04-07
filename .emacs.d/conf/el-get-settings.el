@@ -39,7 +39,8 @@
                     virtualenvwrapper
                     yasnippet
                     dockerfile-mode
-                    yaml-mode))
+                    yaml-mode
+                    coffee-mode))
                     
 
 ;; first enable shallow clone, so we don't need to clone the entire
