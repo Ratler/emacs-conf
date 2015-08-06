@@ -8,10 +8,10 @@
         sh-indent-after-if '+
         sh-indent-after-do '+
         sh-indent-after-continuation 0
-        sh-indent-for-then 0)
-  (when (fboundp 'electric-indent-mode) (electric-indent-mode -1)))
+        sh-indent-for-then 0))
 
 (add-hook 'sh-mode-hook 'my-sh-mode-settings)
 (add-hook 'sh-mode-book 'write-file-settings)
+(add-hook 'sh-mode-hook (lambda () (electric-indent-local-mode -1)))
 
 (provide 'bash-settings)
