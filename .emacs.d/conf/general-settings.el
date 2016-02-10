@@ -75,6 +75,9 @@
 (global-set-key [end] 'end-of-line)
 (global-set-key [f12] 'compile)
 
+;; Disable electric-indent-mode globally
+(add-hook 'after-change-major-mode-hook (lambda() (electric-indent-mode -1)))
+
 ;; Define image-types if running emacs-nox to make nxhtml happy
 (if (boundp 'image-types)
     nil
