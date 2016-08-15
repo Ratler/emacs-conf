@@ -4,4 +4,6 @@
 (require 'magit-gh-pulls)
 (add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls)
 (global-set-key (kbd "C-x g") 'magit-status)
+(setq magit-auto-revert-mode nil)
+(setq magit-last-seen-setup-instructions "1.4.0")
 (provide 'magit-settings)
