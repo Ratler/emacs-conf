@@ -8,7 +8,6 @@
 (global-set-key [(f1)] (lambda () (interactive) (manual-entry (current-word))))
 (setq display-time-day-and-date t)
 (setq display-time-24hr-format t)
-(setq display-time)
 (display-time-mode)
 
 ;; No menu bar or tool bar
